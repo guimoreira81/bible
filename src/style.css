@@ -1,9 +1,9 @@
 body{
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(70, 70, 70);
 }
 
 .book{
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(200, 200, 200);
     margin-left: 10vw;
     margin-top: 10vh;
     width: 80vw;
@@ -13,8 +13,8 @@ body{
 }
 
 .text{
-    color: white;
-    font-family: Verdana, sans-serif;
+    color: black;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 1em;
 }
 
@@ -28,6 +28,7 @@ body{
     color: white;
     background-color: rgb(20, 20, 20);
     border: solid white .1em;
+    border-radius: 0.25em;
     width: 7vh;
     height: 7vh;
     font-size: xxx-large;

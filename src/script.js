@@ -91,6 +91,10 @@ function setPage(){
     .then(data => {
         e.title.textContent = `${book} ${chapter}`;
         e.text.textContent = `${data.text}`;
+    })
+    .catch(res => {
+        e.title.textContent = `${book} ${chapter}`;
+        e.text.textContent = "Error, could'nt fetch data";
     });
 }
 
