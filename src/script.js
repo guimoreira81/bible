@@ -103,22 +103,24 @@ setPage();
 
 e.leftPage.addEventListener("mousedown", (event) => {
     console.log(`Page Turned Left, Book: ${currentBookIndex}, Chapter: ${currentChapter}`);
-    if (currentChapter-1>0){
+    if (currentChapter-1>=0){
         currentChapter--;
+        setPage();
     }else if (currentBookIndex-1>=0){
         currentBookIndex--;
         currentChapter = BooksChapterNumbers[currentBookIndex][1];
+        setPage();
     }
-    setPage();
 });
 
 e.rightPage.addEventListener("mousedown", (event) => {
     console.log(`Page Turned Right, Book: ${currentBookIndex}, Chapter: ${currentChapter}`);
     if (currentChapter+1<=BooksChapterNumbers[currentBookIndex][1]){
         currentChapter++;
+        setPage();
     }else if (currentBookIndex+1<=BooksChapterNumbers.length){
         currentChapter = 0;
         currentBookIndex++;
+        setPage();
     }
-    setPage();
 });
